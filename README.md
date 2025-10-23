@@ -39,3 +39,25 @@ Requirement Analysis serves as a communication channel between clients, users, a
 ### 5. Provides a Clear Project Roadmap
 The process creates detailed documentation that becomes the foundation for design, development, and testing activities. It provides a clear roadmap, ensuring all future phases of the SDLC are aligned with the defined requirements.
 
+## Key Activities in Requirement Analysis
+
+Requirement Analysis involves a series of structured activities that ensure all system requirements are properly understood, defined, and verified. These activities help transform user needs into clear, actionable requirements for the development team.
+
+Below are the five key activities in Requirement Analysis:
+
+- ### **1. Requirement Gathering**
+  This is the initial step where information is collected from stakeholders, users, and clients to understand their needs and expectations. Techniques such as interviews, questionnaires, and observation are commonly used to gather this data.
+
+- ### **2. Requirement Elicitation**
+  Elicitation involves discovering and refining requirements through collaboration and discussion. The goal is to uncover hidden needs, clarify assumptions, and resolve conflicts between stakeholder expectations.
+
+- ### **3. Requirement Documentation**
+  In this phase, all gathered and elicited requirements are formally recorded. The documentation typically includes functional and non-functional requirements, use cases, and user stories. This serves as a reference for all future development activities.
+
+- ### **4. Requirement Analysis and Modeling**
+  This activity focuses on analyzing, prioritizing, and organizing requirements. It also involves modeling the requirements using diagrams such as Data Flow Diagrams (DFDs), UML models, or Entity-Relationship Diagrams (ERDs) to visualize the system structure and behavior.
+
+- ### **5. Requirement Validation**
+  Validation ensures that the documented requirements are complete, consistent, and aligned with user needs and business goals. Reviews, walkthroughs, and prototyping are often used to confirm that the requirements are correct and feasible.
+
+Together, these activities ensure that the software development team has a clear, validated understanding of what needs to be built — reducing risks and increasing the likelihood of project success.
