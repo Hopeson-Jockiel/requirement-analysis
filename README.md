@@ -61,3 +61,44 @@ Below are the five key activities in Requirement Analysis:
   Validation ensures that the documented requirements are complete, consistent, and aligned with user needs and business goals. Reviews, walkthroughs, and prototyping are often used to confirm that the requirements are correct and feasible.
 
 Together, these activities ensure that the software development team has a clear, validated understanding of what needs to be built — reducing risks and increasing the likelihood of project success.
+
+## Types of Requirements
+
+In software engineering, requirements are generally categorized into two main types: **Functional Requirements** and **Non-functional Requirements**.  
+Understanding both types is crucial to building a complete and effective system. Below, these are explained using a *Booking Management System* as a case study.
+
+---
+
+### **1. Functional Requirements**
+
+Functional Requirements describe **what the system should do** — the specific behaviors, features, and functions that enable users to achieve their goals. They define the **core operations** of the system from the user’s and system’s perspective.
+
+**Examples for a Booking Management System:**
+- The system shall allow users to **create, view, modify, and cancel bookings**.
+- The system shall enable users to **search for available rooms, flights, or seats** based on date and location.
+- The system shall allow customers to **make secure online payments** using credit/debit cards or digital wallets.
+- The system shall send **email or SMS confirmations** upon successful booking.
+- The system shall allow administrators to **view all booking records** and generate reports.
+
+**Purpose:**  
+Functional requirements ensure that the system performs the specific actions users need to accomplish their tasks.
+
+---
+
+### **2. Non-functional Requirements**
+
+Non-functional Requirements describe **how the system should perform** — the quality attributes, constraints, and standards that affect the user experience and system performance. These requirements ensure that the system is **reliable, secure, and efficient**.
+
+**Examples for a Booking Management System:**
+- The system should **process booking requests within 3 seconds** under normal network conditions.
+- The platform must be **available 99.9% of the time** to ensure reliability.
+- User data and payment information must be **encrypted and stored securely** to maintain confidentiality.
+- The application should be **accessible on both desktop and mobile devices** with responsive design.
+- The system should support **up to 10,000 concurrent users** without performance degradation.
+
+**Purpose:**  
+Non-functional requirements define the **quality standards** and **performance expectations** of the system, ensuring it is scalable, secure, and user-friendly.
+
+---
+
+Together, Functional and Non-functional Requirements form a complete view of the system — addressing **what the system must do** and **how well it must perform** those tasks.
