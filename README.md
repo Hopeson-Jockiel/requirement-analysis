@@ -139,3 +139,50 @@ Below is the use case diagram for the **Booking Management System**, illustratin
 
 ![Booking Management System Use Case Diagram](alx-booking-uc.png //link:https://viewer.diagrams.net/?tags=%7B%7D&lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&dark=auto#G1M5pzXggJC633bRNI44gh0HyYsCMuzQAJ)
 *Figure: Use Case Diagram for Booking Management System*
+
+## Acceptance Criteria
+
+**Acceptance Criteria** are the predefined conditions or requirements that a software feature must meet to be accepted by the stakeholders, client, or end user.  
+They define **“what must be true”** for a feature to be considered complete, functional, and aligned with the user’s expectations.
+
+---
+
+### **Importance of Acceptance Criteria**
+
+Acceptance Criteria play a critical role in the **Requirement Analysis** and **Software Development Life Cycle (SDLC)** because they:
+
+1. **Clarify Expectations:**  
+   They ensure that developers, testers, and stakeholders have a shared understanding of what the feature should do and how it should behave.
+
+2. **Define Done:**  
+   They help determine when a feature is complete and ready for release, preventing scope creep and incomplete functionality.
+
+3. **Guide Testing:**  
+   They serve as a foundation for test case creation — helping quality assurance (QA) teams verify that the feature works as intended.
+
+4. **Improve Communication:**  
+   They provide a clear, measurable way to confirm that business requirements are met, improving collaboration between technical and non-technical teams.
+
+---
+
+### **Example – Checkout Feature (Booking Management System)**
+
+Below is an example of **Acceptance Criteria** for the **Checkout Feature** in the *Booking Management System*.
+
+**Feature:** Checkout and Payment Processing
+
+**User Story:**  
+> As a customer, I want to complete my booking and make a secure payment so that I can confirm my reservation.
+
+**Acceptance Criteria:**
+1. The system must display a summary of the booking details (date, price, and room type) before payment.  
+2. The customer must be able to select a payment method (credit card, debit card, or digital wallet).  
+3. Payment must be processed securely using the integrated payment gateway.  
+4. The system must generate a booking confirmation message upon successful payment.  
+5. The customer must receive a confirmation email or SMS containing booking details and payment receipt.  
+6. If the payment fails, the system must notify the user and allow them to retry or cancel the checkout process.  
+
+---
+
+**In Summary:**  
+Acceptance Criteria ensure that each feature in the system is **clear, testable, and verifiable**, reducing ambiguity and ensuring high-quality software delivery that aligns with user expectations.
