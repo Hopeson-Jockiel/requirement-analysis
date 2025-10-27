@@ -64,44 +64,100 @@ Together, these activities ensure that the software development team has a clear
 
 ## Types of Requirements
 
-In software engineering, requirements are generally categorized into two main types: **Functional Requirements** and **Non-functional Requirements**.  
-Understanding both types is crucial to building a complete and effective system. Below, these are explained using a *Booking Management System* as a case study.
+In software development, requirements are broadly divided into **Functional** and **Non-functional Requirements**.  
+Functional requirements describe **what** the system should do, while non-functional requirements describe **how well** the system performs those functions.  
+
+Using the **Hotel Booking Management System** (like Airbnb, Booking.com, or OYO) as a case study, we can clearly identify both types.
 
 ---
 
 ### **1. Functional Requirements**
 
-Functional Requirements describe **what the system should do** — the specific behaviors, features, and functions that enable users to achieve their goals. They define the **core operations** of the system from the user’s and system’s perspective.
+Functional requirements specify the system’s **core operations and interactions** that allow users to complete specific tasks.  
+They define what actions the system must perform for both customers and hotel managers.
 
-**Examples for a Booking Management System:**
-- The system shall allow users to **create, view, modify, and cancel bookings**.
-- The system shall enable users to **search for available rooms, flights, or seats** based on date and location.
-- The system shall allow customers to **make secure online payments** using credit/debit cards or digital wallets.
-- The system shall send **email or SMS confirmations** upon successful booking.
-- The system shall allow administrators to **view all booking records** and generate reports.
+**Examples for a Hotel Booking Management System:**
+
+- **User Registration and Authentication:**  
+  Customers and hotel managers can sign up, log in, and manage their profiles securely.
+
+- **Hotel Management:**  
+  Hotel owners can add, update, or remove property details such as room type, pricing, location, and availability via the **Hotel Management Service**.
+
+- **Search Functionality:**  
+  Customers can search hotels based on filters like price range, city, and amenities.  
+  The **Search Service** retrieves results from **Elasticsearch** for fast and accurate queries.
+
+- **Booking Process:**  
+  Users can select rooms, choose check-in/check-out dates, and make reservations.  
+  The **Booking Service** handles this flow and interacts with the **Payment Gateway** for transactions.
+
+- **Payment Processing:**  
+  Integration with third-party payment systems (e.g., Stripe, PayPal) ensures secure, real-time payment confirmation.
+
+- **View Bookings:**  
+  Users can view their booking history and current reservations.  
+  The **View Booking Service** accesses data stored in **Redis** (for recent data) and **Cassandra** (for archived data).
+
+- **Notifications:**  
+  The system automatically sends notifications for booking confirmations, updates, or promotional offers via **Kafka Messaging Queues**.
 
 **Purpose:**  
-Functional requirements ensure that the system performs the specific actions users need to accomplish their tasks.
+Functional requirements define the **specific features and actions** the system must perform to meet user needs.
 
 ---
 
 ### **2. Non-functional Requirements**
 
-Non-functional Requirements describe **how the system should perform** — the quality attributes, constraints, and standards that affect the user experience and system performance. These requirements ensure that the system is **reliable, secure, and efficient**.
+Non-functional requirements focus on **system quality, performance, and reliability**.  
+They describe how well the system executes its functions and ensures a smooth experience for millions of users.
 
-**Examples for a Booking Management System:**
-- The system should **process booking requests within 3 seconds** under normal network conditions.
-- The platform must be **available 99.9% of the time** to ensure reliability.
-- User data and payment information must be **encrypted and stored securely** to maintain confidentiality.
-- The application should be **accessible on both desktop and mobile devices** with responsive design.
-- The system should support **up to 10,000 concurrent users** without performance degradation.
+**Examples for a Hotel Booking Management System:**
+
+- **Performance:**  
+  The system should respond to user actions within **2–3 seconds**, even under high load.  
+  ➤ Achieved through **Redis caching** and **Content Delivery Networks (CDNs)**.
+
+- **Scalability:**  
+  The architecture should support thousands of hotels and millions of customers simultaneously.  
+  ➤ Implemented using **microservices** and **load balancers** to distribute traffic.
+
+- **Availability:**  
+  The system must maintain **99.9% uptime** with minimal service interruptions.  
+  ➤ Managed by **replicated databases** and **failover strategies**.
+
+- **Security:**  
+  All sensitive data (like passwords and payments) must be **encrypted** and **protected with authentication layers**.
+
+- **Reliability:**  
+  The system should function consistently across distributed environments.  
+  ➤ Supported by **Kafka queues** and **Cassandra** for durable message delivery and data persistence.
+
+- **Maintainability:**  
+  The modular microservice design allows developers to update or fix one service without impacting others.
+
+- **Usability:**  
+  The user interface (web and mobile) must be intuitive, responsive, and accessible.
+
+- **Data Analytics:**  
+  Data streams through **Apache Streaming** into **Hadoop** for advanced analytics like customer segmentation and business insights.
 
 **Purpose:**  
-Non-functional requirements define the **quality standards** and **performance expectations** of the system, ensuring it is scalable, secure, and user-friendly.
+Non-functional requirements define the **quality benchmarks** that ensure the system is efficient, secure, and scalable.
 
 ---
 
-Together, Functional and Non-functional Requirements form a complete view of the system — addressing **what the system must do** and **how well it must perform** those tasks.
+### **Summary**
+
+| Requirement Type | Description | Example |
+|------------------|-------------|----------|
+| **Functional** | Defines what the system does | User login, hotel listing, search, booking, payments |
+| **Non-Functional** | Defines how the system performs | Scalability, speed, security, reliability |
+
+---
+
+Together, these requirements ensure that the **Hotel Booking Management System** delivers a seamless experience — balancing functionality, performance, and user satisfaction across all services.
+
 
 ## Use Case Diagrams
 
